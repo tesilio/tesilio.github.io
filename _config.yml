@@ -23,7 +23,7 @@ description              : "개발 관련 내용을 포스팅 합니다."
 url                      : "https://tesilio.github.io"
 baseurl                  : #"/blog"
 repository               : "tesilio/tesilio.github.io"
-teaser                   : #"/assets/images/background1.jpg"
+teaser                   : "/assets/images/background1.jpg"
 breadcrumbs              : # true, false (default)
 words_per_minute         : 200
 comments:
@@ -101,7 +101,7 @@ analytics:
 # Site Author
 author:
   name             : "Sehyun Kim"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/tesilio.jpeg"
   bio              : "Web Developer"
   location         :
   email            : "lodcoco@gmail.com"

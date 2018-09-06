@@ -2,9 +2,6 @@
 layout: posts
 title: Mac 터미널에서 ditto를 이용한 폴더 및 파일 압축(zip)
 tags: [mac, terminal, cli, zip, archive, compress, ditto]
-sitemap:
-  changefreq : daily
-  priority : 1.0
 ---
 
 AWS 람다 함수를 자동 배포하는 스크립트를 작성하던 중이었다.

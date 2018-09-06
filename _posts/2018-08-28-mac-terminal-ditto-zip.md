@@ -4,6 +4,8 @@ title: Mac 터미널에서 ditto를 이용한 폴더 및 파일 압축(zip)
 tags: [mac, terminal, cli, zip, archive, compress, ditto]
 ---
 
+***
+
 AWS 람다 함수를 자동 배포하는 스크립트를 작성하던 중이었다.
 배포 패키지는 zip파일로 업로드를 해야한다.
 압축하기 전 용량이 대략 26MB 정도다.

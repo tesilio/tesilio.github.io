@@ -1,6 +1,7 @@
 ---
 layout: posts
 title: AWS Lambda@Edge 적용기
+description: 람다 엣지를 사용해보자.
 tags: [aws, lambda, cloudFront, lambda@edge, nodejs, javascript]
 ---
 

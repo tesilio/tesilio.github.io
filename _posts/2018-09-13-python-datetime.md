@@ -13,21 +13,21 @@ tags: [python, tip, datetime, timedelta]
 ```python
 import datetime
 
-# <class 'datetime.datetime'>
 now_datetime = datetime.datetime.now()
-print(f"now: {now_datetime}")  # now: 2018-09-13 22:29:37.255036
+print(f"{type(now_datetime)}: {now_datetime}")
+# <class 'datetime.datetime'>: 2018-09-13 22:29:37.255036
 
-# <class 'str'>
 now_str_date = now_datetime.strftime('%Y-%m-%d')
-print(f"now_str_date: {now_str_date}")  # now_str_date: 2018-09-13
+print(f"{type(now_str_date)}: {now_str_date}")
+# <class 'str'>: 2018-09-13
 
-# <class 'str'>
 now_str_time = now_datetime.strftime('%H:%M:%S')
-print(f"now_str_date: {now_str_date}")  # now_str_date: 22:33:33
+print(f"{type(now_str_time)}: {now_str_time}")
+# <class 'str'>: 22:33:33
 
-# <class 'str'>
 now_str_datetime = now_datetime.strftime('%Y-%m-%d %H:%M:%S')
-print(f"now_str_datetime: {now_str_datetime}")  # now_str_datetime: 2018-09-13 22:34:19
+print(f"{type(now_str_datetime)}: {now_str_datetime}")
+# <class 'str'>: 2018-09-13 22:34:19
 ```
 
 ***
@@ -36,12 +36,10 @@ print(f"now_str_datetime: {now_str_datetime}")  # now_str_datetime: 2018-09-13 2
 ```python
 import datetime
 
-# <class 'str'>
 my_str_datetime = "2018-09-13 22:39:04"
-
-# <class 'datetime.datetime'>
 my_datetime = datetime.datetime.strptime(my_str_datetime, '%Y-%m-%d %H:%M:%S')
-print(f"my_datetime: {my_datetime}")  # my_datetime: 2018-09-13 22:39:04
+print(f"{type(my_datetime)}: {my_datetime}")
+# <class 'datetime.datetime'>: 2018-09-13 22:39:04
 ```
 
 ***
@@ -59,13 +57,13 @@ import datetime
 밀리초: datetime.timedelta(milliseconds=1)
 마이크로초: datetime.timedelta(microseconds=1)
 """
-# <class 'datetime.datetime'>
 now_datetime = datetime.datetime.now()
-print(f"now_datetime: {now_datetime}")  # now_datetime: 2018-09-13 23:19:38.364179
+print(f"{type(now_datetime)}: {now_datetime}")
+# <class 'datetime.datetime'>: 2018-09-13 23:19:38.364179
 
-# <class 'datetime.datetime'>
 tomorrow_datetime = now_datetime + datetime.timedelta(days=1)
-print(f"tomorrow_datetime: {tomorrow_datetime}")  # tomorrow_datetime: 2018-09-14 23:19:38.364179
+print(f"{type(tomorrow_datetime)}: {tomorrow_datetime}")
+# <class 'datetime.datetime'>: 2018-09-14 23:19:38.364179
 ```
 
 ***
@@ -80,24 +78,27 @@ datetime.datetime - datetime.datetime = datetime.timedelta
 datetime.timedelta로 일수나 시간을 seconds로 변환
 datetime.timedelta(days=1).total_seconds()
 """
-# <class 'float'>
 day_seconds = datetime.timedelta(days=1).total_seconds()
-print(f"day_seconds: {day_seconds}") # day_seconds: 86400.0
+print(f"{type(day_seconds)}: {day_seconds}")
+# <class 'float'>: 86400.0
 
 # <class 'datetime.datetime'>
 first_datetime = datetime.datetime.strptime('2018-09-13 22:50:14', '%Y-%m-%d %H:%M:%S')
 second_datetime = datetime.datetime.strptime('2018-09-16 22:40:34', '%Y-%m-%d %H:%M:%S')
 
-# <class 'datetime.timedelta'>
 result_timedelta = second_datetime - first_datetime
-# 이틀하고도 85,820초가 지났다!!
-print(f"result_timedelta: {result_timedelta}")  # result_timedelta: 2 days, 23:50:20
+print(f"{type(result_timedelta)}: {result_timedelta}")  # 이틀하고도 85,820초가 지났다!!
+# <class 'datetime.timedelta'>: 2 days, 23:50:20 
 
-# <class 'int'>
-print(f"result_timedelta.days: {result_timedelta.days}")  # result_timedelta.days: 2
-print(f"result_timedelta.seconds: {result_timedelta.seconds}")  # result_timedelta.seconds: 85820
+print(f"{type(result_timedelta.days)}: {result_timedelta.days}")
+# <class 'int'>: 2
 
-print(result_timedelta.total_seconds()) # 258620.0
+print(f"{type(result_timedelta.seconds)}: {result_timedelta.seconds}")
+# <class 'int'>: 85820
+
+# <class 'float'>
+print(result_timedelta.total_seconds())
+# 258620.0
 ```
 
 ***
@@ -106,17 +107,17 @@ print(result_timedelta.total_seconds()) # 258620.0
 ```python
 import datetime
 
-# <class 'str'>
 my_str_datetime = "2018-09-13 22:39:04"
 
-# <class 'datetime.datetime'>
 my_datetime = datetime.datetime.strptime(my_str_datetime, '%Y-%m-%d %H:%M:%S')
-print(f"my_datetime: {my_datetime}")  # my_datetime: 2018-09-13 22:39:04
+print(f"{type(my_datetime)}: {my_datetime}")
+# <class 'datetime.datetime'>: 2018-09-13 22:39:04
 
-# <class 'datetime.datetime'>
 new_datetime = my_datetime.replace(year=2000, month=1, day=15, hour=3, minute=15, second=59)
-print(f"my_datetime: {my_datetime}")  # my_datetime: 2018-09-13 22:39:04
-print(f"new_datetime: {new_datetime}")  # new_datetime: 2000-01-15 03:15:59
+print(f"{type(my_datetime)}: {my_datetime}")
+# <class 'datetime.datetime'>: 2018-09-13 22:39:04
+print(f"{type(new_datetime)}: {new_datetime}")
+# <class 'datetime.datetime'>: 2000-01-15 03:15:59
 ```
 
 ***
@@ -125,17 +126,17 @@ print(f"new_datetime: {new_datetime}")  # new_datetime: 2000-01-15 03:15:59
 ```python
 import datetime
 
-# <class 'datetime.date'>
 my_date = datetime.date(2018, 9, 13)
-print(f"my_date: {my_date}")  # my_date: 2015-04-15
+print(f"{type(my_date)}: {my_date}")
+# <class 'datetime.date'>: 2015-04-15
 
-# <class 'datetime.time'>
 my_time = datetime.time(22, 39, 4)
-print(f"my_time: {my_time}")  # my_time: 22:39:04
+print(f"{type(my_time)}: {my_time}")
+# <class 'datetime.time'>: 22:39:04
 
-# <class 'datetime.datetime'>
 my_datetime = datetime.datetime.combine(my_date, my_time)
-print(f"my_datetime: {my_datetime}")  # my_datetime: 2018-09-13 22:39:04
+print(f"{type(my_datetime)}: {my_datetime}")
+# <class 'datetime.datetime'>: 2018-09-13 22:39:04
 ```
 
 ***

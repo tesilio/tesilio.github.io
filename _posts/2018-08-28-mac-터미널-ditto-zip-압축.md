@@ -1,9 +1,13 @@
 ---
 layout: posts
 title: Mac 터미널에서 ditto 를 이용한 폴더 및 파일 압축 (zip)
-description: 터미널에서 파인더에서 쓰는 아카이브 프로그램을 실행해보자.
+description: Mac 터미널에서 파인더에서 쓰는 아카이브 프로그램을 실행해보자.
 tags: [mac, terminal, cli, zip, archive, compress, ditto]
 ---
+
+Mac 터미널에서 파인더에서 쓰는 아카이브 프로그램을 실행해보자.
+
+***
 
 AWS 람다 함수를 자동 배포하는 스크립트를 작성하던 중이었다.
 배포 패키지는 zip파일로 업로드를 해야한다.

@@ -5,7 +5,9 @@ description: 파이썬 datetime 변환, 연산 등을 해보자.
 tags: [python, tip, datetime, timedelta]
 ---
 
-자꾸 잊어 정리해둔다.
+파이썬 datetime 모듈중 자주 쓰는 것 위주로 정리했다.
+
+***
 
 ## 1. datetime을 문자열로 바꾸기
 ```python

@@ -5,6 +5,8 @@ description: 람다 엣지를 사용해보자.
 tags: [aws, lambda, cloudFront, lambda@edge, nodejs, javascript]
 ---
 
+AWS Lambda Edge를 사용하여 이미지 프로세싱을 구현했다.
+
 ***
 
 # 1. AWS Lambda@Edge란?

@@ -2,7 +2,7 @@
 layout: posts
 title: Learning JavaScript - 배열 1편
 description: JavaScript 배열에 대해 알아보자.
-tags: [javaScript, array, learningJavaScript, nodeJs]
+tags: [javaScript, array, learningJavaScript, nodejs]
 ---
 
 이 포스팅은 Learning JavaScript의 8장(배열과 배열 처리)을 참고하여 작성 되었다.

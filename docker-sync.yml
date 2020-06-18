@@ -1,0 +1,9 @@
+version: "2"
+options:
+  verbose: true
+syncs:
+  code:
+    src: "."
+    sync_strategy: 'native_osx'
+    sync_excludes: [".git", "*.log"]
+

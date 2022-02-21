@@ -86,3 +86,6 @@ $RECYCLE.BIN/
 
 ### custom ###
 _drafts
+
+### docker ###
+.docker-sync/

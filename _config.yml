@@ -101,7 +101,7 @@ analytics:
 # Site Author
 author:
   name             : "Sehyun Kim"
-  avatar           : "/assets/images/tesilio.jpeg"
+  avatar           : "/assets/images/tesilio.png"
   bio              : "Web Developer"
   location         :
   email            : "lodcoco@gmail.com"

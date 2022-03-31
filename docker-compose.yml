@@ -1,9 +1,5 @@
 version: "3.3"
 
-volumes:
-  code:
-    external: true
-
 services:
   blog:
     image: jekyll/jekyll:latest
@@ -11,4 +7,4 @@ services:
     ports:
       - "4000:4000"
     volumes:
-      - code:/srv/jekyll
+      - .:/srv/jekyll

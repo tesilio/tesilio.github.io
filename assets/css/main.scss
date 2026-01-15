@@ -7,6 +7,10 @@
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
+/* Theme switching support - CSS Custom Properties */
+@import "minimal-mistakes/theme-vars";      // CSS 변수 정의 (라이트/다크)
+@import "minimal-mistakes/theme-overrides"; // CSS 변수 적용 오버라이드
+
 html {
   font-size: 13px; // change to whatever
 

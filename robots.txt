@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /
+
+# This site has been moved to https://blog.tesilio.com
+# All content should be indexed from the new domain.
